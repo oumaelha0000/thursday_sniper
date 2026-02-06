@@ -29,7 +29,7 @@ def load_model():
 model, loaded = load_model()
 
 st.title("🦅 EURUSD Thursday Sniper")
-st.caption("Quantum Volatility Predictor | AI-Powered by XGBoost")
+st.caption("Quantum Volatility Predictor | AI-Powered by Oumama")
 
 if not loaded:
     st.error("❌ Model not found! Please upload 'thursday_model.json' to the repository.")
@@ -172,3 +172,4 @@ else:
     
     👈 Click **'💡 Kifash T-khdm b l-App'** in the sidebar for Darija instructions.
     """)
+
