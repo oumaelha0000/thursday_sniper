@@ -37,6 +37,32 @@ if not loaded:
 
 # --- SIDEBAR INPUTS ---
 with st.sidebar:
+    # --- GUIDE B DARIJA (COLLAPSIBLE) ---
+    with st.expander("💡 Kifash T-khdm b l-App (Darija)", expanded=False):
+        st.markdown("""
+        **Marhba ya Sniper! 🦅**
+        
+        Had l-App msowba bash t-3tik **Target d L-Khmis** b diqqa 3aliya.
+        
+        **1. ⏱️ Fouqash t-khdm biha?**
+        Khdm biha **nhar L-Arba3 b lil** (moura Market Close) aw **L-Khmis sba7** (qbl London Open).
+        
+        **2. 📊 Mnayn njib Data?**
+        Hel TradingView aw MT4. Chouf Chm3a d **Mon, Tue, Wed**.
+        * **Range:** (High - Low) dyal nhar b Pips.
+        * **Body:** (Close - Open). 
+           - Ila chm3a **Khadra**: Raqm positif (eg. 20).
+           - Ila chm3a **7mra**: Raqm negatif f Body (eg. -20).
+        
+        **3. 🎯 Kifash n-fhm Natija?**
+        * **Bias:** Kay-goul lik wash t-9lb 3la **Chra** (Buy) wla **Bi3** (Sell).
+        * **Safe Zone:** Hada howa Target L-Madmoun (80%). Khrrj fih nss l-profit.
+        * **Max Extension:** Hada ila kan s-sou9 mjahd bzaf.
+        
+        ⚠️ **Rdd Balek:** Ila kanet **News (NFP/CPI)**, nqqss Risk!
+        """)
+    
+    st.markdown("---")
     st.header("📝 Weekly Data Input")
     st.info("Enter data from Mon-Wed Close")
     
@@ -140,11 +166,9 @@ if predict_btn:
 else:
     st.markdown("### 👋 Marhba ya Sniper!")
     st.markdown("""
-    Use the sidebar on the left to enter Wednesday's closing data.
-    The AI will calculate the optimal **Thursday Expansion Range**.
+    **Use the sidebar on the left to enter Wednesday's closing data.**
     
-    **How to use:**
-    1. Wait for Wednesday Candle Close.
-    2. Input Mon/Tue/Wed Range & Body.
-    3. Click **SNIPE**.
+    This AI uses Quantum Volatility Models to predict the exact **Thursday Expansion Range**.
+    
+    👈 Click **'💡 Kifash T-khdm b l-App'** in the sidebar for Darija instructions.
     """)
